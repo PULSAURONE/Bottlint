@@ -1,0 +1,42 @@
+# START OF FILE .dockerignore #
+
+# Игнорировать директорию с кэшем Python
+__pycache__/
+*.pyc
+*.pyo
+
+# Игнорировать директорию виртуального окружения
+# Если вы используете venv, .venv, env и т.д., добавьте сюда
+.venv/
+venv/
+env/
+
+# Игнорировать файлы IDE и системные файлы
+.idea/
+.vscode/
+*.swp
+.DS_Store
+
+# Игнорировать систему контроля версий
+.git/
+.gitignore
+
+# Игнорировать файлы Docker и Docker Compose
+Dockerfile
+.dockerignore
+docker-compose.yml
+
+# Игнорировать файлы с переменными окружения и секретами
+.env
+.env.example
+
+# Игнорировать директорию с данными, которые будут монтироваться как том (volume)
+# Это критически важно!
+data/
+
+# Игнорировать файлы тестов и документации, если они не нужны в продакшене
+tests/
+docs/
+README.md
+
+# END OF FILE .dockerignore #
